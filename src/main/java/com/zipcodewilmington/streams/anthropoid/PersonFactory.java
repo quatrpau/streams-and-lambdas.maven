@@ -55,7 +55,7 @@ public final class PersonFactory {
                 .generate(this::createRandomPerson)
                 .limit(arrayLength)
                 //how to do this in lambda?
-                .toArray(q -> new Person[0]);
+                .toArray(Person[]::new);
     }
 
 
